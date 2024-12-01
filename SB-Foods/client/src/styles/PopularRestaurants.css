@@ -7,8 +7,9 @@
 }
 .popularRestaurantContainer h3{
 
-    margin-left: 2vw;
-    color: rgb(234, 115, 60);
+    margin-left: 38%;
+    color: rgb(83, 53, 6);
+    font-weight: bolder;
 }
 
 .popularRestaurant-body{

@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import {BsCart3, BsPersonCircle} from 'react-icons/bs'
-import {FcSearch} from 'react-icons/fc'
+import { FaSearch } from "react-icons/fa";
+import { IoMdContact } from "react-icons/io";
 import '../styles/Navbar.css'
 import { useNavigate } from 'react-router-dom'
 import { GeneralContext } from '../context/GeneralContext'
@@ -52,11 +53,11 @@ const Navbar = () => {
         {!usertype ?
         
             <div className="navbar">
-              <h3 onClick={()=> navigate('')}>SB Foods</h3>
+              <img className='logo' src='SB_Foods.jpg' onClick={()=> navigate('')} alt='SB Foods Logo' />
               <div className="nav-content">
                 <div className="nav-search">
                   <input type="text" name="nav-search" id="nav-search" placeholder='Search Restaurants, cuisine, etc.,' onChange={(e)=>setProductSearch(e.target.value)}  />
-                  <FcSearch className="nav-search-icon" onClick={handleSearch} />
+                  <FaSearch className="nav-search-icon" onClick={handleSearch} />
                       {
                         noResult === true ?
                           <div className='search-result-data'>no items found.... try searching for Biriyani, Pizza, etc., <ImCancelCircle className='search-result-data-close-btn' onClick={()=> setNoResult(false)}  /></div>
@@ -65,7 +66,7 @@ const Navbar = () => {
                       }
                 </div>
 
-                <button className='btn btn-outline-primary' onClick={()=> navigate('/auth')}>Login</button>
+                <button className='btn btn-outline-primary' onClick={()=> navigate('/auth')}>Login <IoMdContact style={{fontSize: "1.5rem"}} /></button>
                 
               </div>
             </div>
@@ -78,7 +79,7 @@ const Navbar = () => {
                   <div className="nav-content">
                     <div className="nav-search">
                       <input type="text" name="nav-search" id="nav-search" placeholder='Search Restaurants, cuisine, etc.,' onChange={(e)=>setProductSearch(e.target.value)}  />
-                      <FcSearch className="nav-search-icon" onClick={handleSearch} />
+                      <FaSearch className="nav-search-icon" onClick={handleSearch} />
                       {
                         noResult === true ?
                           <div className='search-result-data'>no items found.... try searching for Biriyani, Pizza, etc., <ImCancelCircle className='search-result-data-close-btn' onClick={()=> setNoResult(false)}  /></div>

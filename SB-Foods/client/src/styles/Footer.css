@@ -1,13 +1,11 @@
 .Footer{
-
-    background-color: #202226;
+    background-color: rgb(83, 53, 6);
     color: rgb(227, 230, 232);
     padding: 3vh 3vw;
     margin-top: 3vh;
 
 }
 .Footer h4{
-
     margin-left: 2vw;
 }
 
@@ -17,12 +15,9 @@
     gap: 10vw;
     margin-bottom: 3vh;
     margin-top: 3vh;
+    padding: 2rem;
 }
 
-.footer-body ul{
-
-    
-}
 
 .footer-body ul li{
     list-style: none;
@@ -33,10 +28,6 @@
 .footer-body ul li:hover{
     list-style: none;
     color: aliceblue; 
-}
-.footer-bottom{
-
-
 }
 
 .footer-bottom p{
