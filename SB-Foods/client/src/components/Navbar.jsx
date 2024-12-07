@@ -75,7 +75,7 @@ const Navbar = () => {
         <>
             {usertype === 'customer' ?
                 <div className="navbar">
-                  <h3 onClick={()=> navigate('')}>SB Foods</h3>
+                  <img className='logo' src='SB_Foods.jpg' onClick={()=> navigate('')} alt='SB Foods Logo' />
                   <div className="nav-content">
                     <div className="nav-search">
                       <input type="text" name="nav-search" id="nav-search" placeholder='Search Restaurants, cuisine, etc.,' onChange={(e)=>setProductSearch(e.target.value)}  />

@@ -54,7 +54,7 @@ const Register = ({setIsLogin}) => {
         ""
         }
         
-        <button className="btn btn-primary" onClick={handleRegister}>Sign up</button>
+        <button className="btn" onClick={handleRegister}>Sign up</button>
         <p>Already registered? <span onClick={()=> setIsLogin(true)}>Login</span></p>
     </form>
   )}

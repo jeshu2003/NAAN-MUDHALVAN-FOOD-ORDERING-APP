@@ -28,9 +28,9 @@
 }
 .authForm h2{
     margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(0, 79, 135);
+    color: rgb(83, 53, 6);
     font-size: 1.8rem;
+    font-weight: bolder;
 }
 .authFormInputs {
     width: 100%;
@@ -38,19 +38,19 @@
 }
 
 .authFormInputs label{
-    color: rgb(0, 61, 101);
+    color: rgb(83, 53, 6);
     /* padding: 0; */
 }
 .authFormInputs input{
-    color: rgb(0, 61, 101);
+    color: rgb(83, 53, 6);
     border: none;
     outline: none;
     background-color: rgba(231, 235, 235, 0);
-    border: 1px solid #9dc1d975;
+    border: 1px solid rgb(83, 53, 6);
     /* padding: 0; */
 }
 .authForm select {
-    color: rgb(0, 61, 101);
+    color: rgb(83, 53, 6);
     border: none;
     outline: none;
     background-color: rgba(231, 235, 235, 0);
@@ -58,15 +58,25 @@
     font-size: medium;
     padding: 15px 10px;
 }
+
+.authForm option{
+    background-color: rgb(83, 53, 6);
+    color: white;
+}
 .authFormInputs input #floatingInput .form-control{
     padding: 0 !important;
 }
 
 .authForm button{
-    background-color: rgb(0, 108, 197);
+    background-color: rgb(83, 53, 6);
     font-weight: bold;
     color: rgb(246, 251, 255);
     height: 50px;
+}
+
+.authForm button:hover{
+    color: white;
+    opacity: 0.9;
 }
 .authForm p{
     margin-top: 5%;
@@ -74,6 +84,6 @@
 }
 .authForm p span{
     margin-top: 5%;
-    color: rgb(0, 68, 107);
+    color: rgb(83, 53, 6);
     cursor: pointer;
 }

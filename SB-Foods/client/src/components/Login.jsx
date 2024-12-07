@@ -23,7 +23,7 @@ const Login = ({setIsLogin}) => {
                                                                   onChange={(e) => setPassword(e.target.value)} /> 
             <label htmlFor="floatingPassword">Password</label>
         </div>
-        <button type="submit" className="btn btn-primary" onClick={handleLogin}>Sign in</button>
+        <button type="submit" className="btn" onClick={handleLogin}>Sign in</button>
 
         <p>Not registered? <span onClick={()=> setIsLogin(false)}>Register</span></p>
     </form>
